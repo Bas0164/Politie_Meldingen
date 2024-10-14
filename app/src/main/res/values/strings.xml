@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Politie Meldingen</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Registreer</string>
+    <string name="username_text">Gebruikersnaam</string>
+    <string name="city_text">Woonplaats</string>
+    <string name="password_text">Wachtwoord</string>
+    <string name="makeAccount_text">Account maken</string>
+    <string name="moreReports_button">Laad meer meldingen</string>
+    <string name="home_button">Home</string>
+    <string name="back_button">Terug</string>
+    <string name="comment_text">Reacties</string>
+    <string name="comment_placeholder">Laat reactie achter..</string>
+    <string name="profile_text">Profiel</string>
+    <string name="upload_button">Uploaden</string>
+    <string name="modify_button">Wijzigen</string>
+    <string name="settings_text">Instellingen</string>
+    <string name="darkMode_text">Dark mode</string>
+    <string name="notifications_text">Pushmeldingen</string>
+    <string name="radius_text">Radius</string>
+    <string name="news_text">Nieuws</string>
+    <string name="wantedPersons_text">Gezochte personen</string>
+    <string name="goodNews_text">Goed nieuws</string>
+    <string name="bergenOpZoom_text">Bergen op Zoom officeel gezelliger dan Roosendaal!</string>
+    <string name="mapbox_access_token" translatable="false" tools:ignore="UnusedResources">pk.eyJ1IjoiYmFzZGVicnVpam4iLCJhIjoiY2x2MWV1OHc2MDc4bDJqcnl4dmltbWhiayJ9.dEuMMV7uQQ7bRFNqVmQOxQ</string>
+    <string name="searchTitle_text">Vrouw (39) ernstig gewond bij schietpartij in Wouw, verdachte opgepakt</string>
+    <string name="searchDescription_text">Bij een schietpartij aan het Melleveld in Wouw is maandag een vrouw ernstig gewond geraakt. Ze is met de ambulance naar het ziekenhuis gebracht. Het slachtoffer werd aan het eind van de middag in een huis aan het Melleveld gevonden. Het gaat volgens de politie om de 39-jarige bewoonster van het huis.</string>
+    <string name="search_button">Zoeken</string>
+    <string name="search_text">Zoek hieronder naar meldingen</string>
+</resources>

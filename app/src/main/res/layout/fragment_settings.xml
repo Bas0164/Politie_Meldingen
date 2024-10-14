@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentSettingsView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".fragments.SettingsFragment" >
+
+    <TextView
+        android:id="@+id/settingsLytHorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text"
+        android:textColor="@color/secondary"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settingsBtnBack"
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:background="@drawable/login_button_radius"
+        android:text="@string/back_button"
+        android:textColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <LinearLayout
+        android:id="@+id/settingsLytVertical"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/settingsLytHorizontal1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settingsTxtDarkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:text="@string/darkMode_text"
+                android:textColor="@color/secondary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/settingsSwitchDarkMode"
+                android:layout_width="66dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="10dp"
+                android:scaleX="2"
+                android:scaleY="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsLytHorizontal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settingsTxtPushNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/notifications_text"
+                android:textColor="@color/secondary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/settingsSwitchPustNotifications"
+                android:layout_width="67dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="10dp"
+                android:scaleX="2"
+                android:scaleY="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsLytHorizontal3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settingsTxtRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/radius_text"
+                android:textColor="@color/secondary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/settingsBarRadius"
+                android:layout_width="146dp"
+                android:layout_height="39dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

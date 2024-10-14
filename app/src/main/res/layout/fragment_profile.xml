@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentProfileView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".fragments.ProfileFragment" >
+
+    <TextView
+        android:id="@+id/profileTxtProfile"
+        android:layout_width="151dp"
+        android:layout_height="69dp"
+        android:text="@string/profile_text"
+        android:textColor="@color/secondary"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <ImageButton
+        android:id="@+id/profileBtnSettings"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/settingsbutton" />
+
+    <LinearLayout
+        android:id="@+id/profileLytVertical"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <ImageButton
+            android:id="@+id/profileImgProfile"
+            android:layout_width="157dp"
+            android:layout_height="161dp"
+            android:layout_marginLeft="30dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/profilepicture" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileBtnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_button_radius"
+            android:text="@string/upload_button"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/profileTxtUsername"
+            android:layout_width="223dp"
+            android:layout_height="42dp"
+            android:text="@string/username_text"
+            android:textColor="@color/secondary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profileEditTxtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/profileTxtPassword"
+            android:layout_width="223dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/password_text"
+            android:textColor="@color/secondary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profileEditTxtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/profileTxtCity"
+            android:layout_width="223dp"
+            android:layout_height="42dp"
+            android:text="@string/city_text"
+            android:textColor="@color/secondary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profileEditTxtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileBtnEdit"
+            android:layout_width="163dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/login_button_radius"
+            android:text="@string/modify_button"
+            android:textColor="@color/primary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileBtnBack"
+            android:layout_width="104dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_radius"
+            android:text="@string/back_button"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
